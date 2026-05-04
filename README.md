@@ -21,10 +21,10 @@ ALL the tables mentioned bellow will have to be completed for the program to wor
 
 1- the list of FIA plots that will be inventoried during the season is located in the sheet named "List_plots". Followind is the list of required and optional headers for this table, and their description.\
 1.1- plot number	: FIA plot number\
-1.2- county: Name of the county where the plot is located [REQUIRED]\
-1.3- owner: name of the owner of the land where the plot is located [REQUIRED]\
-1.4- plot latitude (decimal degree): ACTUAL latitude of the plot in decimal degree and WGS1984 projection [REQUIRED]\
-1.5- plot longitude (decimal degree): ACTUAL longitude of the plot in decimal degree and WGS1984 projection [REQUIRED]\
+1.2- county: Name of the county where the plot is located **[REQUIRED]**\
+1.3- owner: name of the owner of the land where the plot is located **[REQUIRED]**\
+1.4- plot latitude (decimal degree): ACTUAL latitude of the plot in decimal degree and WGS1984 projection **[REQUIRED]**\
+1.5- plot longitude (decimal degree): ACTUAL longitude of the plot in decimal degree and WGS1984 projection **[REQUIRED]**\
 1.6- landing zone latitude (decimal degree): latitude of the potential landing zone in degree (optional)\
 1.7- landing zone longitude (decimal degree): longitude of the potential landing zone in degree (optional)\
 1.8- elevation	: elevation at the plot in feet\
@@ -73,7 +73,7 @@ The only sheet to edit daily right now is named "Flight_inventory". This data ta
 
 ## Reporting (red sheet)
 Two reports are produced as part of this program: the daily schedule (stored in the Daily_Schedule sheet) and the manifest (stored in the Manifest sheet). These two reports are populated thanks to a python program that is stored in specific cells: the green cell located in [A4] in the Daily_Schedule sheet and in [A3] in the Manifest sheet.\
-Once your completed a new data entry, you can run the python programs by clicking on the ["Reset"] item located in the Formulas menu / Python submenu. If you try to run the python code but lost your internet connection, you might get the error [#CONNECT!] visible in the green cells. When you recover your connection, retry to generate the report by clicking on ["Reset Runtime"] which is part of a drop-down menu within the reset item (Formulas -> Python -> Reset -> Reset runtime)
+Once your completed a new data entry, you can run the python programs by clicking on the **"Reset"** item located in the Formulas menu / Python submenu. If you try to run the python code but lost your internet connection, you might get the error **#CONNECT!** visible in the green cells. When you recover your connection, retry to generate the report by clicking on **"Reset Runtime"** which is part of a drop-down menu within the reset item (Formulas -> Python -> Reset -> Reset runtime)
 
 
 
