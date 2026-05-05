@@ -28,12 +28,6 @@ ALL the tables mentioned bellow will have to be completed for the program to wor
 1.6- landing zone latitude (decimal degree): latitude of the potential landing zone in degree (optional)\
 1.7- landing zone longitude (decimal degree): longitude of the potential landing zone in degree (optional)\
 1.8- elevation	: elevation at the plot in feet\
-1.9- slope	: estimated slope at the plot in degree (optional)\
-1.10- aspect : estimated aspect at the plot in degree (optional)\
-1.11- PRIORITY	: priority level (low, medium an hight) to do the plot (optional)\
-1.12- NEAR_HUB : closest hub name (optional)\
-1.13- PlotCover	: estimated plot cover from pre-inventory assessment (optional)\
-1.14- PREV_INV_YEAR: year of the previous inventory - leave blank if non (optional)
 
 2- the list of hubs (main camps) that will be used during the season is located in the sheet named "List_hub". In this table, you'll need to list plot names and associated latitude and longitude in decimal degree and WGS1984 projection. 
 
@@ -44,9 +38,10 @@ ALL the tables mentioned bellow will have to be completed for the program to wor
 5- the list of pilots is located in "List_pilots". You can list all pilots and optionally, their flight weight. NOTE that pilots weight in not included in the manifests (see below for more details).
 
 6- the list of gears that are included during flights to and from plots are listed in the sheet "List_gears".\
-6.1- Name: You'll choose the gears to bring to flights in a fixed list. If you need a new gear type to be added, please contact me.\
-6.2- Description: The description column indicates how many items are attributed per team of person. This column is fed automatically.\
-6.3- Flight weight (lbs): [individual] gear weight (in pounds) will have to be set every season. 
+6.1- Name: You'll list the typical set of gears that are brought in an helicopter on an inventory day.\
+6.2- Number per ...: For every gear item listed, you'll indicate the number of unit typically needed per flight/ drop-off or passenger.\
+6.3- Attribution: For every gear item, indicate its attribution: is the gear attributed to a flight (e.g. a sachel), to a drop-off (e.g. a bivi bag) or for a passenger (e.g. personal back-pack). The python code will computer the total load depending on the number of flights, drop-offs and passengers, so you don't have to do the math.\
+6.4- Flight weight (lbs): [individual] gear weight (in pounds) will have to be set every season. 
 
 7- the list of phones by color are listed in the sheet "List_phones". For each phone, please indicate associated color and number. 
 
